@@ -21,10 +21,10 @@ select * from course;
 
 insert into enroll(s_email, c_number)
 values  ('s1@jmu.edu', 'c1'),
- 		    ('s2@jmu.edu', 'c1'),
- 		    ('s3@jmu.edu', 'c1'),
- 		    ('s4@jmu.edu', 'c2'),
- 		    ('s2@jmu.edu', 'c3'),
-		    ('s3@jmu.edu', 'c3');
+ 	('s2@jmu.edu', 'c1'),
+ 	('s3@jmu.edu', 'c1'),
+ 	('s4@jmu.edu', 'c2'),
+ 	('s2@jmu.edu', 'c3'),
+	('s3@jmu.edu', 'c3');
 
 select * from enroll;
