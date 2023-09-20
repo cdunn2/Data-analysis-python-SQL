@@ -88,8 +88,11 @@ inner join course
 on professor.p_email = course.p_email;
 
 -- Q 2.10
-SELECT p_name, COUNT(c_name) AS num_courses_taught
-FROM p_name_c_name
-GROUP BY p_name
-ORDER BY num_courses_taught DESC
-LIMIT 1;
+select 	professor.p_name,
+	count(course.c_name) as num_course
+from professor
+inner join course
+on professor.p_email = course.p_email
+group by professor.p_name
+order by num_course desc
+limit 1;
